@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>VitalScope Support</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--primary:#2A695B;--primary-dim:#195C4E;--container:#AFEFDD;--surface:#F3FAFD;--card:#FFFFFF;--on:#263539;--muted:#526267;color-scheme:light dark}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--primary:#AFEFDD;--primary-dim:#DDFCDE;--container:#164E42;--surface:#0F1616;--card:#1C2628;--on:#DCE4E7;--muted:#9AA5A9}}
+:root[data-theme="dark"]{--primary:#AFEFDD;--primary-dim:#DDFCDE;--container:#164E42;--surface:#0F1616;--card:#1C2628;--on:#DCE4E7;--muted:#9AA5A9}
+*{box-sizing:border-box}
+body{margin:0;background:var(--surface);color:var(--on);font:16px/1.7 "Plus Jakarta Sans",-apple-system,"PingFang SC","Helvetica Neue",sans-serif}
+main{max-width:760px;margin:0 auto;padding:32px 16px 64px}
+header{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:24px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px;color:var(--primary-dim);text-decoration:none}
+.brand span.dot{width:32px;height:32px;border-radius:10px;background:linear-gradient(135deg,#2A695B,#195C4E);display:inline-block}
+nav{display:flex;gap:8px;flex-wrap:wrap;min-width:0}
+@media (max-width:520px){header{flex-direction:column;align-items:flex-start}}
+html,body{overflow-x:hidden}
+article,p,li{overflow-wrap:anywhere}
+nav a,nav button{font:inherit;font-size:14px;font-weight:600;padding:8px 16px;border-radius:999px;border:0;background:var(--container);color:var(--primary-dim);cursor:pointer;text-decoration:none}
+nav button[aria-pressed="true"]{background:var(--primary);color:var(--surface)}
+article{background:var(--card);border-radius:24px;padding:28px 24px;min-width:0}
+@media (max-width:520px){article{padding:22px 16px}h1{font-size:24px}}
+h1{font-size:28px;line-height:1.25;margin:0 0 8px;color:var(--primary-dim)}
+h2{font-size:19px;margin:28px 0 8px;color:var(--primary)}
+p,li{color:var(--on)}
+ul{padding-left:20px}
+li{margin:6px 0}
+code{font-size:.9em;background:var(--surface);padding:1px 6px;border-radius:6px}
+a{color:var(--primary)}
+footer{margin-top:24px;font-size:13px;color:var(--muted);text-align:center}
+[hidden]{display:none!important}
+</style></head><body><main>
+<header><a class="brand" href="./"><span class="dot"></span>VitalScope</a><nav><button data-lang="en" aria-pressed="true">English</button><button data-lang="zh" aria-pressed="false">中文</button><a href="./">Privacy</a></nav></header>
+<article data-lang="en"><h1>Support — VitalScope</h1>
+<p>Need help? Email <strong><a href="mailto:caseyxiang@gmail.com">caseyxiang@gmail.com</a></strong>. We usually reply within 2 business days.</p>
+<h2>Frequently asked questions</h2>
+<ul><li><strong>Where is my data stored?</strong> On your device and in your own private iCloud. The developer cannot see it.</li><li><strong>How do I back up or move to a new phone?</strong> Settings → 备份与恢复 (Backup &amp; Restore) → export a backup file. iCloud sync also restores data automatically when you sign in with the same Apple ID.</li><li><strong>AI scan says it can't reach the service.</strong> Your photos are kept — tap 手动录入 (Enter manually) to continue, or retry later on a different network (Wi-Fi / cellular). You can also save the report now and use 用照片智能识别 (Scan these photos) later.</li><li><strong>How do I delete my account?</strong> Settings → 账号 (Account) → 删除账号 (Delete Account). This erases your account, server-side usage logs and all app data on your devices and iCloud.</li><li><strong>Is VitalScope medical advice?</strong> No. VitalScope is a record-keeping and reminder tool. Always consult your doctor.</li></ul></article>
+<article data-lang="zh" hidden><h1>技术支持 — VitalScope</h1>
+<p>遇到问题请发邮件至 <strong><a href="mailto:caseyxiang@gmail.com">caseyxiang@gmail.com</a></strong>,我们一般会在 2 个工作日内回复。</p>
+<h2>常见问题</h2>
+<ul><li><strong>我的数据存在哪里?</strong> 在您的设备和您本人的 iCloud 私有库里,开发者无法查看。</li><li><strong>怎么备份 / 换手机?</strong> 设置 → 备份与恢复 → 导出备份文件。用同一个 Apple ID 登录新手机时,iCloud 也会自动同步回来。</li><li><strong>AI 识别提示连不上服务?</strong> 照片已保留,点「手动录入」继续填写,或换个网络(Wi-Fi / 蜂窝)后重试。也可以先保存报告,之后再点「用照片智能识别」补识别。</li><li><strong>怎么删除账号?</strong> 设置 → 账号 → 删除账号。会删除账号、服务器上的用量记录,以及您设备和 iCloud 中的全部应用数据。</li><li><strong>VitalScope 能提供医疗建议吗?</strong> 不能。VitalScope 是记录和提醒工具,医疗决定请咨询医生。</li></ul></article>
+<footer>© 2026 SIXPINES PRODUCTS INC. · <a href="./">Privacy Policy / 隐私政策</a> · <a href="support.html">Support / 技术支持</a></footer>
+</main><script>
+const btns=document.querySelectorAll('nav button[data-lang]');
+function show(l){document.querySelectorAll('article[data-lang]').forEach(a=>a.hidden=a.dataset.lang!==l);
+btns.forEach(b=>b.setAttribute('aria-pressed',b.dataset.lang===l));document.documentElement.lang=l==='zh'?'zh-Hans':'en';
+try{history.replaceState(null,'',l==='zh'?'#zh':'#en')}catch(e){}}
+btns.forEach(b=>b.addEventListener('click',()=>show(b.dataset.lang)));
+show(location.hash==='#zh'||(!location.hash&&navigator.language.startsWith('zh'))?'zh':'en');
+</script></body></html>
